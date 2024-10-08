@@ -1,0 +1,201 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Set to 0 to avoid horizontal overflow */
+    padding: 0;
+    overflow-x: hidden; /* This hides horizontal overflow for the whole body */
+    color: #333;
+}
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('./images/pexels-yankrukov-4965339.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    width: 102%;
+    height: 75vh; /* Set to 75% of the viewport height */
+    color: white;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: 0;
+    padding-left: 30px;
+}
+
+.header p {
+    font-size: 1.2em;
+    max-width: 50%; /* Adjusts the width of the text */
+    line-height: 1.6;
+    margin: 0;
+    padding-right: 30px;
+}
+
+/* Flexbox positioning */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Optional: Style for name on the left */
+.header h1 {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.header p {
+    flex: 2;
+    text-align: right;
+}
+
+h1, h2 {
+    text-align: center;
+    color: whitesmoke;
+}
+.main {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: auto; /* Allow height to adjust based on content */
+    box-sizing: border-box;
+    overflow-x: hidden; /* Remove horizontal scroll */
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+    box-sizing: border-box;
+}
+
+.food-card {
+    flex: 1 1 250px; /* Allow cards to grow and shrink */
+    max-width: 250px; /* Limit the maximum width */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+}
+
+.food-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.food-details {
+    padding: 10px;
+    text-align: center;
+}
+
+.food-details span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.food-details button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.food-details button:hover {
+    background-color: #218838;
+}
+
+.order-container {
+    border: 2px solid #007bff; /* Border color */
+    background-color: #f8f9fa; /* Background color */
+    padding: 60px;
+    margin-left: 500px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.order-container h2{
+    color: black;
+}
+
+#orderSummary div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#orderSummary button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#orderSummary {
+    border: 2px solid #007bff;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#orderSummary button:hover {
+    background-color: #c82333;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#totalAmount {
+    font-weight: bold;
+    color: #007bff;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[onclick="placeOrder()"] {
+    margin-top: 10px; /* Adjust top margin */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+}
+
+button[onclick="placeOrder()"]:hover {
+    background-color: #0069d9;
+}

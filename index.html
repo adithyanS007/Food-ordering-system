@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering System</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Food World</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nemo cum natus commodi, <br>
+            vero doloremque facilis consectetur minus optio! Dignissimos,<br>
+            ab. Voluptate culpa sit facere distinctio fuga modi doloribus alias.</p>
+    </div>
+    <div class="main">
+        <h1>Food Menu</h1>
+        <div id="menu" class="menu-container">
+            <div class="food-card">
+                <img src="./images/pexels-aimbere-elorza-1176843138-27220878.jpg" alt="Burger" class="food-image">
+                <div class="food-details">
+                    <span>Burger - $5</span>
+                    <button onclick="addItem('Burger', 5)">Add to Order</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="./images/pexels-mumtahina-tanni-1080117-6260921.jpg" alt="Pizza" class="food-image">
+                <div class="food-details">
+                    <span>Biriyani - $15</span>
+                    <button onclick="addItem('Biriyani', 15)">Add to Order</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="./images/pexels-renestrgar-19681747.jpg" alt="Pizza" class="food-image">
+                <div class="food-details">
+                    <span>Pizza - $10</span>
+                    <button onclick="addItem('Pizza', 10)">Add to Order</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="./images/pexels-richard-frazier-1334534705-25311973.jpg" alt="Drinks" class="food-image">
+                <div class="food-details">
+                    <span>Drinks - $20</span>
+                    <button onclick="addItem('Drinks', 20)">Add to Order</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="./images/pexels-shashi-ganjhu-21951397-19418741.jpg" alt="Rice" class="food-image">
+                <div class="food-details">
+                    <span>Rice - $12</span>
+                    <button onclick="addItem('Rice', 12)">Add to Order</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="./images/watermelon.jpg" alt="Watermelon Juice" class="food-image">
+                <div class="food-details">
+                    <span>Watermelon Juice - $5</span>
+                    <button onclick="addItem('Watermelon Juice', 5)">Add to Order</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="./images/orange.jpg" alt="Orange Juice" class="food-image">
+                <div class="food-details">
+                    <span>Orange Juice - $5</span>
+                    <button onclick="addItem('Orange Juice', 5)">Add to Order</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="./images/mixed.jpg" alt="Mixed Fruit Juice" class="food-image">
+                <div class="food-details">
+                    <span>Mixed Fruit Juice - $10</span>
+                    <button onclick="addItem('Mixed Fruit Juice', 10)">Add to Order</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="./images/lemon.jpg" alt="Lemon Juice" class="food-image">
+                <div class="food-details">
+                    <span>Lemon Juice - $5</span>
+                    <button onclick="addItem('Lemon Juice', 5)">Add to Order</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="./images/strawberry.jpg" alt="Strawberry Juice" class="food-image">
+                <div class="food-details">
+                    <span>Strawberry Juice - $7</span>
+                    <button onclick="addItem('Strawberry Juice', 7)">Add to Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-container">
+        <h2>Your Orders</h2>
+        <div id="orderSummary"></div>
+        <h3>Total: $<span id="totalAmount">0</span></h3>
+        <input type="text" id="orderInput" placeholder="Your Order Details" />
+        <button onclick="placeOrder()">Place Order</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
